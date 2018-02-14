@@ -21,18 +21,6 @@ class RestaurantsController < ApplicationController
     end
   end
 
-  def edit
-
-  end
-
-  def update
-
-  end
-
-  def destroy
-
-  end
-
   private
   def restaurant_params
     params.require(:restaurant).permit(:name, :address, :category, :phone_number)
