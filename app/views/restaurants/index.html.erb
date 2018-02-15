@@ -2,7 +2,7 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-xs-4 column-offset-3">
+    <div class="col-xs-4 col-xs-offset-3">
       <ul>
         <% @restaurants.each do |restaurant| %>
           <li><%= link_to restaurant.name, restaurant_path(restaurant.id) %></li>
@@ -11,7 +11,7 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-xs-4 column-offset-3">
+    <div class="col-xs-4 col-xs-offset-3">
       <%= link_to "add new restaurant",  new_restaurant_path %>
     </div>
   </div>
